@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Dodaj zadanie</title>
+{% endblock %}
+{% block content %}
+<h1>Nowe zadanie:</h1>
+
+<form action="" method="post">
+	{% csrf_token %}
+	<table>
+		{{ form.as_table }}
+	</table>
+	<input type="submit" value="Dodaj zadanie" />
+</form>
+{% endblock %}

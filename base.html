@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<header>
+    {% block header %}
+    <a href="/logout">LOG OUT</a>
+    &nbsp;<a href="/features.html">FEATURES</a>
+    &nbsp;<a href="/todo.html">TO DO</a><br>
+    <a href="http://genesismud.org/play" target="_blank"><button>PLAY</button></a>
+    <a href="http://genesismud.org/" target="_blank">Genesis MUD</a>
+    {% endblock %}
+</header>
+<!-- <a href="/add_character.html">Dodaj postać</a>-->
+<a href="/add_quest/">Dodaj zadanie</a>
+<!-- <a href="/add_guild.html">Dodaj gildię</a> -->
+<!--<a href="/add_domain.html">Dodaj domenę</a>-->
+<br>
+<!-- <a href="guilds.html">Gildie</a> -->
+<a href="/quests/">Zadania</a>
+<!-- <a href="domains.html">Domeny</a> -->
+
+<hr>
+{% block content %}
+
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <hr>
+    Genpedia v. 0.02
+
+</footer>
+{% endblock %}
+</body>
+</html>

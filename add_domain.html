@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Dodaj domenę</title>
+{% endblock %}
+{% block content %}
+<h1>Nowa domena:</h1>
+
+<form action="" method="post">
+	{% csrf_token %}
+	<table>
+		{{ form.as_table }}
+	</table>
+	<input type="submit" value="Dodaj domenę" />
+</form>
+
+
+{% endblock %}

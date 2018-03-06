@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>
+    <h2>{{ quest.name }} ({{ quest.domain }})</h2>
+    <p>{{ quest.hint }}</p>
+    {{ quest.solution }}
+    <br>added by: {{quest.creator}}
+</p>
+
+<hr>
+Most quest contributions: {{ quest_mvp.1 }}
+{% endblock %}
